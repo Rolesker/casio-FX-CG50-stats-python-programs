@@ -1,4 +1,4 @@
-# Chi-squared
+# Chi-squared contingency tables
 Calculates the chi-squared tables and statistics from a table of observed values in order to determine how likely it is that these variables are associated.
 
 Enter the dimensions mxn of the observed data. Enter the observed values one by one, no need for adding totals. The rest will be done for you! the program will output each important piece of info seperately for the sake of copying it down:
