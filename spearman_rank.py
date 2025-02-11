@@ -17,23 +17,14 @@ def find_largest(arr):
  return largest
 
 def ranker(arr):
- ranked_array=[]
+ sorted_ver=sorted(arr)
+ score_association=dict.fromkeys(arr,-1)
+ for i in range(len(sorted_ver)):
+  if score_association[sorted_ver[i]]==-1:
+   score_association[sorted_ver[i]]=i+1
  for i in range(len(arr)):
-  ranked_array.append(0)
- value_to_place=1
- done=False
- while done==False:
-  add_this_time=0
-  largest=find_largest(arr)
-  if largest==0:
-   done=True
-  for i in range(len(arr)):
-   if arr[i]==largest:
-    ranked_array[i]=value_to_place
-    arr[i]=-1
-    add_this_time+=1
-    value_to_place+=add_this_time
- return ranked_array
+  arr[i]=score_association[arr[i]]
+ return arr
 
 ranked_x_array=ranker(x_array)
 print("RANKED X:")
