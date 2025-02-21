@@ -10,7 +10,6 @@ Enter the dimensions mxn of the observed data. Enter the observed values one by 
 - degrees of freedom
 
 # Spearman's rank correlation coefficient
-Finds the degree of correlation between to variables.
+Finds the degree of correlation between 2 variables.
 
-Enter raw data, it will be ranked, then the rank coefficient will be outputted.
-THESE PROGRAMS ARE UNRELIABLE WHEN HANDLING DATA WITH REPEATED VALUES - I'm not sure if there is a definitive method for ranking the data, but when handling data with repeated values this often causes alot of variations within how accurate the results are, this is true for both versions provided. I would not rely on these very heavily for the time being.
+Enter raw data, it will be ranked, then the rank coefficient will be outputted using the spearman's rank coefficient formula.
