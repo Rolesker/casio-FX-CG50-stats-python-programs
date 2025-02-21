@@ -9,13 +9,6 @@ for i in range(length):
  temp=float(input("y enter value "+str(i+1)+" "))
  y_array.append(temp)
 
-def find_largest(arr):
- largest=0.0
- for i in arr:
-  if i>largest:
-   largest=i
- return largest
-
 def ranker(arr):
  sorted_ver=sorted(arr)
  score_association=dict.fromkeys(arr,-1)
